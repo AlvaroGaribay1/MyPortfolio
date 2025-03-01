@@ -1,0 +1,62 @@
+.col {
+  height:calc(100vh - 4rem);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.title-container {
+  overflow: hidden; /* Oculta el texto que aún no aparece */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  width: 0; /* Oculta el texto inicialmente */
+  animation: typewriter 3s steps(20) forwards; /* Efecto de escritura */
+}
+
+/* Animación de escritura */
+@keyframes typewriter {
+  to {
+    width: 100%; /* Muestra el texto poco a poco */
+  }
+}
+
+@keyframes stypewriter {
+  to {
+    width: 87.9%; /* Muestra el texto poco a poco */
+  }
+}
+
+
+/* Animación del Cursor (Parpadeo) */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.main-photo {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+}
+
+.welcome {
+  background-color: #3f3f3f;
+  height: 1.5rem;
+  color: #3DDC84;
+  overflow: hidden; /* Oculta el texto que aún no aparece */
+  width: 0; /* Oculta el texto inicialmente */
+  animation: stypewriter 3s steps(20) forwards; /* Efecto de escritura */
+}

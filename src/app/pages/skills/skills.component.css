@@ -1,0 +1,45 @@
+.container {
+  margin-top: 4rem;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+  fill: white;
+  filter: drop-shadow(0 0 4px cyan);
+  transform: scale(1.1); /* Aumenta un 10% */
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  overflow: hidden; /* Oculta el texto que aún no aparece */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  width: 0; /* Oculta el texto inicialmente */
+  animation: typewriter 3s steps(20) forwards; /* Efecto de escritura */
+}
+
+/* Animación del Cursor (Parpadeo) */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    width: 100%; /* Muestra el texto poco a poco */
+  }
+}
+
+.col {
+  margin-left: 2rem;
+}

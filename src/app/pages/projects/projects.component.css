@@ -1,0 +1,30 @@
+.container {
+  margin-top: 4rem;
+}
+
+/* Animación de escritura */
+@keyframes typewriter {
+  to {
+    width: 100%; /* Muestra el texto poco a poco */
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Animación del Cursor (Parpadeo) */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  overflow: hidden; /* Oculta el texto que aún no aparece */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  width: 0; /* Oculta el texto inicialmente */
+  animation: typewriter 3s steps(20) forwards; /* Efecto de escritura */
+}
