@@ -1,1 +1,77 @@
-<p>about works!</p>
+<div class="container">
+  <div class="row ">
+    <div class="col">
+      <h1 @slideIn class="title mt-5">Contact<span class="cursor">;</span> </h1>
+    </div>
+  </div>
+
+  <div class="web bg-dark">
+    <!-- Options like apple window -->
+    <div class="window d-flex">
+      <div class="card shadow-lg m-2" style="background-color: red;">
+        <div class="row text-center p-2">
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="card shadow-lg m-2" style="background-color: rgb(218, 218, 3);">
+        <div class="row text-center p-2">
+            <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+      <div class="card shadow-lg m-2" style="background-color: rgb(0, 184, 0);">
+        <div class="row text-center p-2">
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="d-flex bar">
+        <div class="web-title text-center d-flex text-light ">
+          <h5 class="section pt-3">How to contact me?</h5>
+          <span class="plus"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <span class="plus"><i class="bi bi-x-lg"></i></span>
+      </div>
+    </div>
+    <div class="url d-flex">
+        <div class="arrows mt-2">
+          <span><i class="fa-solid fa-arrow-left arrow"></i></span>
+          <span><i class="fa-solid fa-arrow-right arrow"></i></span>
+          <span><i class="fa-solid fa-rotate-right"></i></span>
+        </div>
+        <div class="http d-flex">
+          <div class="search-bar mt-1 mb-1">
+            solo da click en los enlaces -->
+            <span><i class="bi bi-star"></i></span>
+          </div>
+          <span class="dots"><i class="bi bi-three-dots-vertical"></i></span>
+        </div>
+    </div>
+    <!-- contactForm -->
+      <div class="contact text-light mt-5">
+        <div class="contact-form">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+</div>

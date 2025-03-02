@@ -1,0 +1,125 @@
+.container {
+  margin-top: 4rem;
+}
+
+.web {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bar {
+  border-top-left-radius: 10px;
+  width: 100%;
+  background-color: rgb(155, 203, 245);
+}
+
+.plus {
+  width: 10px;
+  height: 10px;
+  font-size: 1rem;
+  margin: 15px 0 0 10px;
+  opacity: 0.6;
+}
+
+.web-title {
+  width: 20rem;
+  background-color: rgb(15, 137, 238);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 3px 1px 1px 1px rgb(15, 137, 238);
+}
+
+.section {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* Animación de escritura */
+@keyframes typewriter {
+  to {
+    width: 100%; /* Muestra el texto poco a poco */
+  }
+}
+
+/* Animación del Cursor (Parpadeo) */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  overflow: hidden; /* Oculta el texto que aún no aparece */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  width: 0; /* Oculta el texto inicialmente */
+  animation: typewriter 3s steps(20) forwards; /* Efecto de escritura */
+}
+
+.card {
+  width: 3%;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+  fill: white;
+  filter: drop-shadow(0 0 4px cyan);
+  transform: scale(1.1); /* Aumenta un 10% */
+}
+
+.col {
+  margin-left: 2rem;
+}
+
+.arrows {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  width: 8rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.arrow {
+  margin-right: 20px;
+}
+
+.url {
+  background-color: rgb(15, 137, 238);
+  width: 100%;
+}
+
+.http {
+  background-color: rgb(15, 137, 238);
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  margin-left: 10px;
+  border: 2px solid #ffffff; /* Se agrega un borde válido */
+  border-radius: 20px; /* Aumenta el redondeo para un mejor efecto */
+  padding: 5px 10px; /* Ajusta el padding interno */
+  display: flex;
+  align-items: center; /* Centra el ícono dentro */
+  justify-content:end;
+}
+
+.dots {
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
