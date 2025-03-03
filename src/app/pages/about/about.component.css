@@ -108,13 +108,14 @@
   background-color: rgb(255, 255, 255);
   width: 95%;
   margin-left: 10px;
-  border: 2px solid #ffffff; /* Se agrega un borde válido */
-  border-radius: 20px; /* Aumenta el redondeo para un mejor efecto */
-  padding: 5px 10px; /* Ajusta el padding interno */
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 5px 10px;
   display: flex;
-  align-items: center; /* Centra el ícono dentro */
-  justify-content:end;
+  align-items: center; 
+  justify-content: space-between;
 }
+
 
 .dots {
   color: white;
@@ -123,3 +124,8 @@
   font-size: 20px;
 }
 
+.contact {
+  border: 2px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  padding: 20px;
+}
