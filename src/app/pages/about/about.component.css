@@ -64,8 +64,15 @@
 
 .card {
   width: 3%;
+  height: 3%;
   border-radius: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a {
+  color: black;
+  height: 1rem;
+  text-align: center;
 }
 
 .card:hover {
@@ -112,7 +119,7 @@
   border-radius: 20px;
   padding: 5px 10px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
 
